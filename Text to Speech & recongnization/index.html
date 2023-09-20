@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VoiceMate</title>
+    <link rel="icon" href="./Assests/speak.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="Style-box">
+
+            <div class="head">
+                <h1> Text to Speech & Voice Recongnization</h1>
+            </div>
+        </div>
+
+        <div class="main">
+        <div class="textarea">
+            <textarea placeholder="Write Anything...."></textarea>
+        </div>
+
+        <div class="row">
+            <img src="./Assests/down-chevron.png" width="38px" 
+            style="position: absolute; margin-right: 73px; background-color: #fff; border: none; border-radius: 50%;">
+            <select></select>
+            <button><img src="./Assests/volume.png" width="38px"></button> 
+            <button onclick="startSpeechRecognition()"><img src="./Assests/voice.png" width="38px"></button>
+            <button id="pause-button"><img src="./Assests/play-button.png" width="38px"></button>
+
+        </div>
+    </div>
+
+        </div>
+
+
+    <script src="./javascript/app.js"></script>
+</body>
+</html>
