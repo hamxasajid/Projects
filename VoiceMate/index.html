@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>VoiceMate</title>
     <link rel="icon" href="./Assests/speak.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-
     <div class="container">
         <div class="Style-box">
-
             <div class="head">
                 <h1> Text to Speech & Voice Recongnization</h1>
             </div>
         </div>
-
         <div class="main">
         <div class="textarea">
             <textarea placeholder="Write Anything...."></textarea>
         </div>
-
         <div class="row">
-            <img src="./Assests/down-chevron.png" width="38px" 
-            style="position: absolute; margin-right: 73px; background-color: #fff; border: none; border-radius: 50%;">
-            <select></select>
+            <img src="./Assests/down-chevron.png" width="38px" class="down-chevron" alt="Down Chevron" style="position: absolute; margin-right: 73px; background-color: #fff; border: none; border-radius: 50%;">
+            <select title="Select an option"></select>
             <button><img src="./Assests/volume.png" width="38px" title="Listen"></button> 
-            <button onclick="startSpeechRecognition()" title="Speak"><img src="./Assests/voice.png" width="38px"></button>
-            <button id="pause-button" title="Pause/Play"><img src="./Assests/play-button.png" width="38px"></button>
-
+            <button onclick="startSpeechRecognition()" title="Speak"><img src="./Assests/voice.png" width="38px" alt="Voice Icon"></button>
+            <button id="pause-button" title="Pause/Play"><img src="./Assests/play-button.png" width="38px" alt="Play Button"></button>
         </div>
     </div>
-
         </div>
-
 
     <script src="./javascript/app.js"></script>
 </body>
