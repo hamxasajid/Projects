@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>VoiceMate</title>
     <link rel="icon" href="./Assests/speak.png" type="image/x-icon">
@@ -20,11 +21,20 @@
             <textarea placeholder="Write Anything...."></textarea>
         </div>
         <div class="row">
-            <img src="./Assests/down-chevron.png" width="38px" class="down-chevron" alt="Down Chevron" style="position: absolute; margin-right: 73px; background-color: #fff; border: none; border-radius: 50%;">
-            <select title="Select an option"></select>
-            <button><img src="./Assests/volume.png" width="38px" title="Listen"></button> 
-            <button onclick="startSpeechRecognition()" title="Speak"><img src="./Assests/voice.png" width="38px" alt="Voice Icon"></button>
-            <button id="pause-button" title="Pause/Play"><img src="./Assests/play-button.png" width="38px" alt="Play Button"></button>
+            <div class="inner-row" style="position: relative;">
+                <i class="bi bi-chevron-down down-chevron"></i>
+                <select></select>
+                <button class="btn" title="Listen">
+                  <i class="bi bi-volume-up"></i>
+                </button>
+                <button class="btn" onclick="startSpeechRecognition()" title="Speak">
+                  <i class="bi bi-mic"></i>
+                </button>
+                <button id="pause-button" class="btn" title="Pause/Play">
+                  <i class="bi bi-play-circle"></i>
+                </button>
+              </div>
+              
         </div>
     </div>
         </div>
